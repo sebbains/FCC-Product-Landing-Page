@@ -15,9 +15,9 @@
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a id="nav-link" href="#howItWorks">How it works</a></li>
-                    <li><a id="nav-link" href="#pricing">Pricing</a></li>
                     <li><a id="nav-link" href="#features">Features</a></li>
+                    <li><a id="nav-link" href="#seeItInAction">See it in Action</a></li>
+                    <li><a id="nav-link" href="#products">Products</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,97 +28,160 @@
                 <div class="singleColumn column">
                     <div class="contentArea">
                         <div class="subtitle">
-                            <h3>Single column</h3>
+                            <h3>Sign up today</h3>
+                            <p>and hear about our latest product releases!</p>
                         </div>
-                        <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
-                        </div>
-                        <div class="text">
-                            <p>example text</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="howItWorks">
-                <div class="doubleColumn column">
-                    <div class="contentArea">
-                        <div class="subtitle">
-                            <h3>Double column</h3>
-                        </div>
-                        <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
-                        </div>
-                        <div class="text">
-                            <p>example text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doubleColumn column">
-                    <div class="contentArea">
-                        <div class="subtitle">
-                            <h3>Double column</h3>
-                        </div>
-                        <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
-                        </div>
-                        <div class="text">
-                            <p>example text</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="pricing">
-                <div class="singleColumn column">
-                    <div class="contentArea">
-                        <div class="subtitle">
-                            <h3>Single column</h3>
-                        </div>
-                        <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
-                        </div>
-                        <div class="text">
-                            <p>example text</p>
-                        </div>
+                        <!-- start mailchimp form
+                        <form action="https://gmail.us18.list-manage.com/subscribe/post?u=9781b5ed94caed444b04fbd98&amp;id=13b51f8180" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <label for="mce-EMAIL">Email Address </label>
+                            <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email" id="mce-EMAIL">
+                            <!-- bot check--/>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9781b5ed94caed444b04fbd98_13b51f8180" tabindex="-1" value=""></div>
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </form>
+                        end mailchimp form-->
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <input id="email" type="email" value="" placeholder="Enter your email address" name="email" required/>
+                            <input id="submit" type="submit" value="Submit" name="submit"/>
+                        </form>
                     </div>
                 </div>
             </section>
             <section id="features">
-                <div class="tripleColumn column">
+                <div class="row">
+                    <div class="doubleColumn column leftColumn">
+                        <div class="contentArea">
+                            <div class="imageCont">
+                                <img src="https://via.placeholder.com/50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doubleColumn column rightColumn">
+                        <div class="contentArea">
+                            <div class="subtitle">
+                                <h3>Plasma blades</h3>
+                            </div>
+                            <div class="text">
+                                <p>Powered by the finest Kyber crystals our blades can cut through virtually anything, from flesh to blast doors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="doubleColumn column leftColumn">
+                        <div class="contentArea">
+                            <div class="imageCont">
+                                <img src="https://via.placeholder.com/50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doubleColumn column rightColumn">
+                        <div class="contentArea">
+                            <div class="subtitle">
+                                <h3>Personalised</h3>
+                            </div>
+                            <div class="text">
+                                <p>Available in multiple colors, single and double blades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="doubleColumn column leftColumn">
+                        <div class="contentArea">
+                            <div class="imageCont">
+                                <img src="https://via.placeholder.com/50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doubleColumn column rightColumn">
+                        <div class="contentArea">
+                            <div class="subtitle">
+                                <h3>Unique</h3>
+                            </div>
+                            <div class="text">
+                                <p>Every lightsaber is individually hand crafted and different, making a fine addition to any collection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </section>
+            <section id="seeItInAction">
+                <div class="singleColumn column">
                     <div class="contentArea">
                         <div class="subtitle">
-                            <h3>Triple column</h3>
+                            <h3>See it in action</h3>
+                        </div>
+                        <div class="videoPlayer">
+                            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/a7Sm8YiZZvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="products">
+                <div class="tripleColumn column">
+                    <div class="contentArea" id="redSaber">
+                        <div class="subtitle">
+                            <h3>Sith special</h3>
+                        </div>
+                        <div class="price">
+                            <h4>100 Credits</h4>
                         </div>
                         <div class="imageCont">
                             <img src="https://via.placeholder.com/100">
                         </div>
                         <div class="text">
-                            <p>example text</p>
+                            <p>Bright red</p>
+                            <p>Dual wield</p>
+                            <p>Specialised in defeating Jedi</p>
+                            <p>Larger form</p>
+                        </div>
+                        <div class="btnContainer">
+                            <button class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>
                 <div class="tripleColumn column">
-                    <div class="contentArea">
+                    <div class="contentArea" id="blueSaber">
                         <div class="subtitle">
-                            <h3>Triple column</h3>
+                            <h3>Jedi blue</h3>
+                        </div>
+                        <div class="price">
+                            <h4>150 Credits</h4>
                         </div>
                         <div class="imageCont">
                             <img src="https://via.placeholder.com/100">
                         </div>
                         <div class="text">
-                            <p>example text</p>
+                            <p>Bright Blue</p>
+                            <p>Single Wield</p>
+                            <p>Slices Sith in two</p>
+                            <p>Easy hand held size</p>
+                        </div>
+                        <div class="btnContainer">
+                            <button class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>
                 <div class="tripleColumn column">
-                    <div class="contentArea">
+                    <div class="contentArea" id="purpleSaber">
                         <div class="subtitle">
-                            <h3>Triple column</h3>
+                            <h3>Council cutter</h3>
+                        </div>
+                        <div class="price">
+                            <h4>250 Credits</h4>
                         </div>
                         <div class="imageCont">
                             <img src="https://via.placeholder.com/100">
                         </div>
                         <div class="text">
-                            <p>example text</p>
+                            <p>Stunning Purple</p>
+                            <p>Guaranteed rank of Master</p>
+                            <p>Decapitates Mandalorians with ease</p>
+                            <p>Use to remove reptiles from any air vehicles</p>
+                        </div>
+                        <div class="btnContainer">
+                            <button class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>

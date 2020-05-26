@@ -14,8 +14,9 @@ html {
 }
 
 body{
-    background-color: #e5e5e5;
+    background-color: #fff;
     margin: 0;
+    
 }
 
 /* Headings */
@@ -33,13 +34,13 @@ h1{
     font-size: 2rem;
 }
 h2{
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 h4{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #topBar{
@@ -47,7 +48,7 @@ h4{
     position: fixed;
     width: 100%;
     min-height: 50px;
-    box-shadow: 1px 1px 4px #888;
+    box-shadow: 0 0 4px #888;
     display: flex;
     align-items: center;
 }
@@ -85,12 +86,13 @@ nav a{
 }
 
 #container{
-    background-color: #000;
+    background-color: #e5e5e5;
     max-width: 98%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 header,
@@ -98,18 +100,12 @@ footer{
     background-color: #457b9d;
 }
 
-main{
-    background-color: #1d3557;
-}
-
 section{
-    border: 1px solid #000;
-    background-color: #f1faee;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 5% 0;
+    margin-top: 2%;
 }
 
 .column{
@@ -118,7 +114,7 @@ section{
     align-content: center;
     justify-content: center;
     text-align: center;
-    padding: 5% 0;
+    padding: 1% 0;
 }
 
 .singleColumn{
@@ -132,8 +128,10 @@ section{
 }
 
 .contentArea{
-    background-color: #e63946;
-    width:250px;
+    /* background-color: #e63946; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } 
 
 /* Clear margins from inline elements */
@@ -142,3 +140,73 @@ h3,
 p{
     margin: 0;
 }
+
+/* hero section */
+#hero input{
+    width:80%;
+    height: 30px;
+    margin: 5%;
+    text-align:center;
+}
+
+/* features section */
+#features{
+    flex-wrap: wrap;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.leftColumn{
+    width: 40%;
+    justify-content: flex-end;
+}
+.rightColumn{
+    width: 60%;
+    justify-content: flex-start;
+}
+.rightColumn .contentArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+/* product section */
+#products .contentArea{
+    border-radius: 5px;
+    width: 50%;
+    height: 300px;
+    justify-content: space-around;
+}
+#redSaber{
+    box-shadow: 0 0 10px #F00;
+}
+#blueSaber{
+    box-shadow: 0 0 10px rgb(0, 153, 255);
+}
+#purpleSaber{
+    box-shadow: 0 0 10px rgb(174, 0, 255);
+}
+
+@media only screen and (max-width: 780px) {
+    #products{
+      flex-direction: column;
+    }
+    #products .column{
+        width: 100%;
+    }
+    .rightColumn{
+        width:60%;
+    }
+
+  }
+
+/* 
+TO DO
+Add footer
+include logos/images
+select a font
+review spacing
+*/
