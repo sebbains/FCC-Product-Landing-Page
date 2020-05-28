@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obi-Wan's Exceedingly Good Lightsabers</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
     <header id="header">
         <div id="topBar">
             <div id="titleHolder">
-                <img id="header-img" src="https://via.placeholder.com/50">
+                <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Dueling_lightsabers.svg/1280px-Dueling_lightsabers.svg.png" width="50px" height="50px">
                 <h1>Obi-Wan's Exceedingly Good Lightsabers</h1>
             </div>
             <nav id="nav-bar">
@@ -51,8 +52,8 @@
                 <div class="row">
                     <div class="doubleColumn column leftColumn">
                         <div class="contentArea">
-                            <div class="imageCont">
-                                <img src="https://via.placeholder.com/50">
+                            <div class="iconContainer">
+                                <i class="fab fa-galactic-republic fa-4x"></i>
                             </div>
                         </div>
                     </div>
@@ -70,8 +71,8 @@
                 <div class="row">
                     <div class="doubleColumn column leftColumn">
                         <div class="contentArea">
-                            <div class="imageCont">
-                                <img src="https://via.placeholder.com/50">
+                            <div class="iconContainer">
+                                <i class="fas fa-jedi fa-4x"></i>
                             </div>
                         </div>
                     </div>
@@ -89,8 +90,8 @@
                 <div class="row">
                     <div class="doubleColumn column leftColumn">
                         <div class="contentArea">
-                            <div class="imageCont">
-                                <img src="https://via.placeholder.com/50">
+                            <div class="iconContainer">
+                                <i class="fas fa-meteor fa-4x"></i>
                             </div>
                         </div>
                     </div>
@@ -112,9 +113,7 @@
                         <div class="subtitle">
                             <h3>See it in action</h3>
                         </div>
-                        <div class="videoPlayer">
-                            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/a7Sm8YiZZvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <iframe id="video" height="315" src="https://www.youtube.com/embed/a7Sm8YiZZvg" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </section>
@@ -128,7 +127,7 @@
                             <h4>100 Credits</h4>
                         </div>
                         <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
+                            <img src="https://contestimg.wish.com/api/webimage/59fb08e6ff96b619fad0ba35-large.jpg?cache_buster=8410fcaf9596eed8aa7e2c3e02d7bb24" width="100" height="100">
                         </div>
                         <div class="text">
                             <p>Bright red</p>
@@ -137,7 +136,7 @@
                             <p>Larger form</p>
                         </div>
                         <div class="btnContainer">
-                            <button class="button">Purchase Now</button>  
+                            <button id="redButton" class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>
@@ -150,7 +149,7 @@
                             <h4>150 Credits</h4>
                         </div>
                         <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Lightsaber_blue_%28with_shimmering_aura%29.png" width="100" height="100">
                         </div>
                         <div class="text">
                             <p>Bright Blue</p>
@@ -159,7 +158,7 @@
                             <p>Easy hand held size</p>
                         </div>
                         <div class="btnContainer">
-                            <button class="button">Purchase Now</button>  
+                            <button id="blueButton" class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>
@@ -172,7 +171,7 @@
                             <h4>250 Credits</h4>
                         </div>
                         <div class="imageCont">
-                            <img src="https://via.placeholder.com/100">
+                            <img src="https://live.staticflickr.com/3597/3356014616_af11f892fb_b.jpg" width="100" height="100">
                         </div>
                         <div class="text">
                             <p>Stunning Purple</p>
@@ -181,16 +180,20 @@
                             <p>Use to remove reptiles from any air vehicles</p>
                         </div>
                         <div class="btnContainer">
-                            <button class="button">Purchase Now</button>  
+                            <button id="purpleButton" class="button">Purchase Now</button>  
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </div>
-    
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; 2020 Obi-Wans Exceedingly Good Lightsabers</p>
+    </footer>
 </body>
 </html>

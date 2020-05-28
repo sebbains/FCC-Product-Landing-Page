@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *{
     /* Assigns all elements to use box model sizing
     (margin/border/padding no longer added on top of specified width/height) */
@@ -8,8 +10,8 @@
 
 html {
     /* Setting a base font size of 10px give us easier rem calculations
-       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth*/
-    font-size: 10px;
+       Info: 1rem === 12px, 1.5rem === 18px, 2rem === 24px and so forth*/
+    font-size: 12px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,7 +27,6 @@ h2,
 h3,
 h4,
 h5{
-    /* font-family: 'Bangers', cursive; */
     letter-spacing: 0.2rem;
     margin: 0.7rem 0;
 }
@@ -38,6 +39,7 @@ h2{
 }
 h3{
     font-size: 1.75rem;
+    margin-bottom: 0.3em;
 }
 h4{
     font-size: 1.5rem;
@@ -95,17 +97,12 @@ nav a{
     padding-top: 50px;
 }
 
-header,
-footer{
-    background-color: #457b9d;
-}
-
 section{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin: 2% 0;
 }
 
 .column{
@@ -137,12 +134,18 @@ section{
 /* Clear margins from inline elements */
 h1,
 h3,
+h4,
 p{
     margin: 0;
 }
 
+h1{
+    margin-left: 3%;
+}
+
 /* hero section */
-#hero input{
+#hero input,
+button{
     width:80%;
     height: 30px;
     margin: 5%;
@@ -157,10 +160,14 @@ p{
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    padding-bottom: 2%;
 }
 .leftColumn{
     width: 40%;
     justify-content: flex-end;
+}
+.leftColumn .contentArea{
+    padding-right: 8%;
 }
 .rightColumn{
     width: 60%;
@@ -171,23 +178,40 @@ p{
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    width: 75%;
+}
+i{
+    color: #a40000;
+}
+
+/* see it in action section */
+#seeItInAction .contentArea{
+    width: 75%;
+}
+#seeItInAction > iframe {
+    max-width: 560px;
+    width: 100%;
 }
 
 /* product section */
 #products .contentArea{
     border-radius: 5px;
-    width: 50%;
-    height: 300px;
+    width: 80%;
+    height: 400px;
     justify-content: space-around;
+    box-shadow: 0 0 10px #555;
 }
-#redSaber{
-    box-shadow: 0 0 10px #F00;
+#redSaber:hover{
+    box-shadow: 0 0 20px #F00;
 }
-#blueSaber{
-    box-shadow: 0 0 10px rgb(0, 153, 255);
+#blueSaber:hover{
+    box-shadow: 0 0 20px rgb(0, 153, 255);
 }
-#purpleSaber{
-    box-shadow: 0 0 10px rgb(174, 0, 255);
+#purpleSaber:hover{
+    box-shadow: 0 0 20px rgb(174, 0, 255);
+}
+button{
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 780px) {
@@ -200,13 +224,42 @@ p{
     .rightColumn{
         width:60%;
     }
+    h1{
+        font-size:1rem;
+    }
+    #topBar{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        text-align: center;
+        flex-direction: column;
+    }
+    #hero{
+        margin-top: 80px;
+    }
 
-  }
+}
 
-/* 
-TO DO
-Add footer
-include logos/images
-select a font
-review spacing
-*/
+footer{
+    margin-top:2%;
+}
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li {
+    padding: 0 10px;
+    list-style: none;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer > p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    color: #444;
+}
